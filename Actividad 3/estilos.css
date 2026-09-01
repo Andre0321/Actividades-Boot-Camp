@@ -1,0 +1,362 @@
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    background-color: #FFF8F0;
+    color: #5D5360;
+}
+
+
+/* TÍTULOS */
+
+h1,
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* MENÚ - FLEXBOX */
+
+.header {
+    background-color: #F8C8DC;
+    color: #5D5360;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    box-shadow: 0 2px 8px #e8cbd6;
+}
+
+.logo {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: #5D5360;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu a:hover {
+    color: #9B6B8D;
+}
+
+
+/* HERO - FLEXBOX */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 50px;
+
+    padding: 70px 8%;
+
+    background-color: #FFF8F0;
+}
+
+.hero-texto {
+    flex: 1;
+}
+
+.hero-texto h1 {
+    font-size: 48px;
+    color: #9B6B8D;
+    margin-bottom: 20px;
+}
+
+.hero-texto p {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #6D6470;
+}
+
+.hero-imagen {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-imagen img {
+    width: 100%;
+    max-width: 500px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 8px 20px #dfcdd5;
+}
+
+
+/* BOTÓN */
+
+.boton {
+    display: inline-block;
+
+    background-color: #C8D8C0;
+    color: #5D5360;
+
+    padding: 13px 22px;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    margin-top: 15px;
+
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #B7C9AE;
+    transform: translateY(-2px);
+}
+
+
+/* SECCIONES */
+
+.seccion {
+    padding: 60px 8%;
+}
+
+.seccion h2 {
+    text-align: center;
+    color: #9B6B8D;
+    margin-bottom: 40px;
+}
+
+
+/* TARJETAS - CSS GRID */
+
+.tarjetas {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.tarjeta {
+    background-color: #FFFFFF;
+
+    padding: 28px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px #eadde3;
+
+    border-top: 5px solid #F8C8DC;
+
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta h3 {
+    color: #9B6B8D;
+}
+
+.tarjeta p {
+    line-height: 1.6;
+}
+
+
+/* DESTINOS - CSS GRID */
+
+.destinos {
+    background-color: #EAF5F4;
+}
+
+.destinos h2 {
+    color: #708B83;
+}
+
+.destinos-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.destino {
+    background-color: #FFFFFF;
+
+    padding: 28px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px #d9e5e2;
+
+    border-left: 5px solid #DCC6E0;
+}
+
+.destino h3 {
+    color: #8C7094;
+}
+
+.destino p {
+    line-height: 1.6;
+}
+
+
+/* CONSEJOS */
+
+.consejos {
+    padding: 60px 8%;
+
+    text-align: center;
+
+    background-color: #F5ECF5;
+}
+
+.consejos h2 {
+    color: #8C7094;
+}
+
+.consejos p {
+    max-width: 800px;
+
+    margin: auto;
+
+    line-height: 1.7;
+
+    font-size: 18px;
+}
+
+.lista-consejos {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+}
+
+.lista-consejos span {
+    background-color: #FFFFFF;
+
+    padding: 15px 22px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 3px 10px #e5dce5;
+}
+
+
+/* CONTACTO - FLEXBOX */
+
+.contacto {
+    background-color: #DCC6E0;
+
+    color: #5D5360;
+
+    padding: 45px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.contacto h2 {
+    color: #725979;
+}
+
+
+/* FOOTER - FLEXBOX */
+
+footer {
+    background-color: #9B6B8D;
+
+    color: white;
+
+    padding: 30px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+footer h3 {
+    margin-top: 0;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .hero-texto h1 {
+        font-size: 36px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .destinos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+
+        text-align: center;
+    }
+}
